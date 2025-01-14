@@ -5,8 +5,6 @@ import numpy as np
 from deep_learning.boost import BoostingRNN 
 from deep_learning.utils import prepare_data_random, shuffle_data
 
-
-# Set seed for reproducibility
 torch.manual_seed(0)
 
 # Hyperparameters

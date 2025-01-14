@@ -1,0 +1,5 @@
+nohup: ignoring input
+[I 2025-01-14 12:48:19,001] A new study created in memory with name: no-name-7a3f2e74-d655-4bce-a433-1b1d641f4c16
+[I 2025-01-14 13:28:48,294] Trial 0 finished with value: 0.5782312925170068 and parameters: {'hidden_dim': 64, 'num_layers': 2, 'num_models': 2, 'batch_size': 32, 'lr': 0.0029216630855030947}. Best is trial 0 with value: 0.5782312925170068.
+[I 2025-01-14 15:09:42,842] Trial 1 finished with value: 0.5605442176870749 and parameters: {'hidden_dim': 32, 'num_layers': 3, 'num_models': 6, 'batch_size': 16, 'lr': 0.00510841222765017}. Best is trial 0 with value: 0.5782312925170068.
+[I 2025-01-14 16:00:11,292] Trial 2 finished with value: 0.5173469387755102 and parameters: {'hidden_dim': 32, 'num_layers': 3, 'num_models': 4, 'batch_size': 16, 'lr': 0.00025891707964816236}. Best is trial 0 with value: 0.5782312925170068.

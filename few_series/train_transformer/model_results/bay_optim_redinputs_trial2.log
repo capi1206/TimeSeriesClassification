@@ -1,0 +1,1199 @@
+nohup: ignoring input
+[I 2025-01-10 18:16:24,599] A new study created in memory with name: no-name-1067c143-b386-49fd-a536-ec045848810c
+/home/capi1206/Documents/deepL_tests/few_series/bay_optim_hyperparam.py:27: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  "drop_prob": trial.suggest_uniform("drop_prob", 0.2, 0.4),
+/home/capi1206/Documents/deepL_tests/few_series/bay_optim_hyperparam.py:29: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  "l1_lambda": trial.suggest_loguniform("l1_lambda", 1e-5, 1e-2),
+[I 2025-01-10 20:15:47,777] Trial 0 finished with value: 57.142857142857146 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 4, 'drop_prob': 0.3349031541362747, 'batch_size': 128, 'l1_lambda': 1.9555653944684697e-05}. Best is trial 0 with value: 57.142857142857146.
+/home/capi1206/Documents/deepL_tests/few_series/bay_optim_hyperparam.py:27: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  "drop_prob": trial.suggest_uniform("drop_prob", 0.2, 0.4),
+/home/capi1206/Documents/deepL_tests/few_series/bay_optim_hyperparam.py:29: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  "l1_lambda": trial.suggest_loguniform("l1_lambda", 1e-5, 1e-2),
+[I 2025-01-10 20:46:59,391] Trial 1 finished with value: 57.01328150307742 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.21238445533747471, 'batch_size': 128, 'l1_lambda': 2.4897002636843766e-05}. Best is trial 0 with value: 57.142857142857146.
+[I 2025-01-10 21:25:22,075] Trial 2 finished with value: 58.79494655004859 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.31547989473049776, 'batch_size': 32, 'l1_lambda': 3.1320115731394566e-05}. Best is trial 2 with value: 58.79494655004859.
+   Total best acc changed to 48.234531908001294,  
+                            at epoch 0/50 at the coin 13
+   Total best acc changed to 50.17816650469712,  
+                            at epoch 2/50 at the coin 13
+   Total best acc changed to 50.46971169420149,  
+                            at epoch 14/50 at the coin 13
+   Total best acc changed to 50.50210560414642,  
+                            at epoch 34/50 at the coin 13
+   Total best acc changed to 54.0006478781989,  
+                            at epoch 0/50 at the coin 13
+  Early stopping triggered, with best val acc: 54.0006478781989, st
+   Total best acc changed to 54.87528344671202,  
+                            at epoch 6/50 at the coin 13
+  Early stopping triggered, with best val acc: 54.87528344671202, st
+  Early stopping triggered, with best val acc: 54.29219306770327, st
+   Total best acc changed to 56.04146420472951,  
+                            at epoch 0/50 at the coin 13
+  Early stopping triggered, with best val acc: 56.04146420472951, st
+  Early stopping triggered, with best val acc: 53.51473922902494, st
+  Early stopping triggered, with best val acc: 51.4415289925494, st
+  Early stopping triggered, with best val acc: 48.81762228701004, st
+  Early stopping triggered, with best val acc: 52.28377065111759, st
+  Early stopping triggered, with best val acc: 55.68513119533527, st
+  Early stopping triggered, with best val acc: 48.428895367670876, st
+  Early stopping triggered, with best val acc: 53.77389050858439, st
+  Early stopping triggered, with best val acc: 52.640103660511826, st
+   Total best acc changed to 56.43019112406868,  
+                            at epoch 6/50 at the coin 13
+   Total best acc changed to 57.142857142857146,  
+                            at epoch 7/50 at the coin 13
+   Early stopping triggered, with best val acc: 57.142857142857146, nd
+  Early stopping triggered, with best val acc: 51.92743764172336, st
+  Early stopping triggered, with best val acc: 55.10204081632653, st
+  Early stopping triggered, with best val acc: 55.45837382572076, st
+   Total best acc changed to 44.833171363783606,  
+                            at epoch 0/50 at the coin 9
+   Total best acc changed to 47.327502429543244,  
+                            at epoch 1/50 at the coin 9
+   Total best acc changed to 51.830255911888564,  
+                            at epoch 2/50 at the coin 9
+   Total best acc changed to 52.38095238095238,  
+                            at epoch 5/50 at the coin 9
+   Total best acc changed to 54.03304178814383,  
+                            at epoch 7/50 at the coin 9
+  Early stopping triggered, with best val acc: 54.03304178814383, st
+  Early stopping triggered, with best val acc: 51.50631681243926, st
+  Early stopping triggered, with best val acc: 48.13735017816651, st
+   Total best acc changed to 56.33300939423388,  
+                            at epoch 7/50 at the coin 9
+  Early stopping triggered, with best val acc: 56.33300939423388, st
+  Early stopping triggered, with best val acc: 53.22319403952057, st
+  Early stopping triggered, with best val acc: 55.166828636216394, st
+  Early stopping triggered, with best val acc: 49.20634920634921, st
+  Early stopping triggered, with best val acc: 54.3245869776482, st
+  Early stopping triggered, with best val acc: 52.024619371558146, st
+  Early stopping triggered, with best val acc: 53.64431486880466, st
+  Early stopping triggered, with best val acc: 50.76125688370586, st
+  Early stopping triggered, with best val acc: 55.74991901522514, st
+  Early stopping triggered, with best val acc: 53.12601230968578, st
+  Early stopping triggered, with best val acc: 48.5584710074506, st
+  Early stopping triggered, with best val acc: 52.704891480401685, st
+  Early stopping triggered, with best val acc: 52.38095238095238, st
+   Total best acc changed to 57.01328150307742,  
+                            at epoch 1/50 at the coin 9
+   Early stopping triggered, with best val acc: 57.01328150307742, nd
+  Early stopping triggered, with best val acc: 52.76967930029154, st
+   Total best acc changed to 47.975380628441854,  
+                            at epoch 0/50 at the coin 9
+   Total best acc changed to 48.461289277615805,  
+                            at epoch 1/50 at the coin 9
+   Total best acc changed to 54.454162617427926,  
+                            at epoch 2/50 at the coin 9
+  Early stopping triggered, with best val acc: 54.454162617427926, st
+   Total best acc changed to 56.268221574344025,  
+                            at epoch 3/50 at the coin 9
+   Total best acc changed to 57.07806932296728,  
+                            at epoch 5/50 at the coin 9
+   Early stopping triggered, with best val acc: 57.07806932296728, nd
+  Early stopping triggered, with best val acc: 51.4415289925494, st
+   Total best acc changed to 57.88791707159054,  
+                            at epoch 3/50 at the coin 9
+   Early stopping triggered, with best val acc: 57.88791707159054, nd
+  Early stopping triggered, with best val acc: 51.37674117265954, st
+   Total best acc changed to 58.66537091026887,  
+                            at epoch 0/50 at the coin 9
+   Early stopping triggered, with best val acc: 58.66537091026887, nd
+  Early stopping triggered, with best val acc: 52.80207321023648, st
+  Early stopping triggered, with best val acc: 48.00777453838678, st
+  Early stopping triggered, with best val acc: 55.52316164561063, st
+  Early stopping triggered, with best val acc: 55.166828636216394, st
+  Early stopping triggered, with best val acc: 51.21477162293489, st
+  Early stopping triggered, with best val acc: 53.02883057985099, st
+  Early stopping triggered, with best val acc: 51.765468091998706, st
+  Early stopping triggered, with best val acc: 52.704891480401685, st
+  Early stopping triggered, with best val acc: 56.559766763848394, st
+  Early stopping triggered, with best val acc: 54.97246517654681, st
+   Total best acc changed to 58.79494655004859,  
+                            at epoch 0/50 at the coin 9
+   Early stopping triggered, with best val acc: 58.79494655004859, nd
+  Early stopping triggered, with best val acc: 55.587949465500486, st
+  Early stopping triggered, with best val acc: 46.71201814058957, st
+  Early stopping triggered, with best val acc: 51.08519598315517, st
+   Total best acc changed to 43.34305150631681,  
+                            at epoch 0/50 at the coin 15
+   Total best acc changed to 46.32329122125041,  
+                            at epoch 1/50 at the coin 15
+   Total best acc changed to 49.951409135082606,  
+                            at epoch 2/50 at the coin 15
+   Total best acc changed to 50.56689342403628,  
+                            at epoch 9/50 at the coin 15
+   Total best acc changed to 51.18237771298996,  
+                            at epoch 15/50 at the coin 15
+  Early stopping triggered, with best val acc: 51.18237771298996, st
+  Early stopping triggered, with best val acc: 46.25850340136054, st
+   Total best acc changed to 52.899254940071266,  
+                            at epoch 3/50 at the coin 15
+   Total best acc changed to 53.2555879494655,  
+                            at epoch 4/50 at the coin 15
+   Total best acc changed to 54.61613216715258,  
+                            at epoch 6/50 at the coin 15
+  Early stopping triggered, with best val acc: 54.61613216715258, st
+  Early stopping triggered, with best val acc: 49.303530936183996, st
+  Early stopping triggered, with best val acc: 52.83446712018141, st
+  Early stopping triggered, with best val acc: 50.98801425332037, st
+  Early stopping triggered, with best val acc: 52.99643666990606, st
+   Total best acc changed to 54.778101716877224,  
+                            at epoch 23/50 at the coin 15
+   Total best acc changed to 55.26401036605118,  
+                            at epoch 26/50 at the coin 15
+   Total best acc changed to 55.587949465500486,  
+                            at epoch 37/50 at the coin 15
+  Early stopping triggered, with best val acc: 49.40071266601879, st
+  Early stopping triggered, with best val acc: 47.748623258827344, st
+[I 2025-01-10 22:18:25,458] Trial 3 finished with value: 56.98088759313249 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 4, 'drop_prob': 0.3427484690228954, 'batch_size': 128, 'l1_lambda': 0.00011060399967026731}. Best is trial 2 with value: 58.79494655004859.
+[I 2025-01-10 23:20:01,013] Trial 4 finished with value: 55.91188856494979 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 4, 'drop_prob': 0.2864056625562905, 'batch_size': 32, 'l1_lambda': 0.001282211933213663}. Best is trial 2 with value: 58.79494655004859.
+[I 2025-01-11 00:13:04,180] Trial 5 finished with value: 57.75834143181082 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 4, 'drop_prob': 0.30844056258193886, 'batch_size': 64, 'l1_lambda': 1.1220994776244976e-05}. Best is trial 2 with value: 58.79494655004859.
+[I 2025-01-11 01:13:11,884] Trial 6 finished with value: 56.81891804340784 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 4, 'drop_prob': 0.3820374973958957, 'batch_size': 64, 'l1_lambda': 4.0081325406103225e-05}. Best is trial 2 with value: 58.79494655004859.
+   Total best acc changed to 56.20343375445416,  
+                            at epoch 2/50 at the coin 15
+  Early stopping triggered, with best val acc: 56.20343375445416, st
+  Early stopping triggered, with best val acc: 53.871072238419174, st
+  Early stopping triggered, with best val acc: 47.87819889860706, st
+  Early stopping triggered, with best val acc: 53.51473922902494, st
+   Total best acc changed to 56.98088759313249,  
+                            at epoch 3/50 at the coin 15
+  Early stopping triggered, with best val acc: 56.98088759313249, st
+  Early stopping triggered, with best val acc: 54.713313896987366, st
+  Early stopping triggered, with best val acc: 54.58373825720764, st
+  Early stopping triggered, with best val acc: 53.806284418529316, st
+  Early stopping triggered, with best val acc: 50.72886297376093, st
+   Total best acc changed to 50.210560414642046,  
+                            at epoch 0/50 at the coin 6
+   Total best acc changed to 52.1865889212828,  
+                            at epoch 14/50 at the coin 6
+   Total best acc changed to 52.31616456106252,  
+                            at epoch 18/50 at the coin 6
+  Early stopping triggered, with best val acc: 52.31616456106252, st
+  Early stopping triggered, with best val acc: 51.99222546161322, st
+  Early stopping triggered, with best val acc: 49.951409135082606, st
+  Early stopping triggered, with best val acc: 52.15419501133787, st
+   Total best acc changed to 53.70910268869453,  
+                            at epoch 6/50 at the coin 6
+   Total best acc changed to 55.91188856494979,  
+                            at epoch 10/50 at the coin 6
+  Early stopping triggered, with best val acc: 55.91188856494979, st
+  Early stopping triggered, with best val acc: 54.486556527372855, st
+  Early stopping triggered, with best val acc: 54.259799157758344, st
+  Early stopping triggered, with best val acc: 54.486556527372855, st
+  Early stopping triggered, with best val acc: 52.80207321023648, st
+  Early stopping triggered, with best val acc: 53.74149659863946, st
+  Early stopping triggered, with best val acc: 55.45837382572076, st
+  Early stopping triggered, with best val acc: 50.40492387431163, st
+  Early stopping triggered, with best val acc: 52.38095238095238, st
+  Early stopping triggered, with best val acc: 53.93586005830904, st
+  Early stopping triggered, with best val acc: 48.10495626822158, st
+  Early stopping triggered, with best val acc: 55.32879818594105, st
+  Early stopping triggered, with best val acc: 49.20634920634921, st
+  Early stopping triggered, with best val acc: 50.210560414642046, st
+  Early stopping triggered, with best val acc: 54.64852607709751, st
+  Early stopping triggered, with best val acc: 54.58373825720764, st
+   Total best acc changed to 47.554259799157755,  
+                            at epoch 0/50 at the coin 15
+   Total best acc changed to 49.01198574667963,  
+                            at epoch 1/50 at the coin 15
+   Total best acc changed to 50.890832523485585,  
+                            at epoch 5/50 at the coin 15
+   Total best acc changed to 50.98801425332037,  
+                            at epoch 8/50 at the coin 15
+   Total best acc changed to 51.08519598315517,  
+                            at epoch 9/50 at the coin 15
+  Early stopping triggered, with best val acc: 51.08519598315517, st
+   Total best acc changed to 53.28798185941043,  
+                            at epoch 2/50 at the coin 15
+   Total best acc changed to 53.41755749919015,  
+                            at epoch 19/50 at the coin 15
+   Total best acc changed to 54.61613216715258,  
+                            at epoch 29/50 at the coin 15
+  Early stopping triggered, with best val acc: 48.94719792678976, st
+  Early stopping triggered, with best val acc: 54.22740524781341, st
+   Total best acc changed to 55.26401036605118,  
+                            at epoch 2/50 at the coin 15
+   Total best acc changed to 55.52316164561063,  
+                            at epoch 7/50 at the coin 15
+   Total best acc changed to 55.55555555555556,  
+                            at epoch 11/50 at the coin 15
+  Early stopping triggered, with best val acc: 55.55555555555556, st
+  Early stopping triggered, with best val acc: 52.931648850016195, st
+  Early stopping triggered, with best val acc: 53.90346614836411, st
+  Early stopping triggered, with best val acc: 54.35698088759313, st
+  Early stopping triggered, with best val acc: 52.38095238095238, st
+  Early stopping triggered, with best val acc: 52.737285390346614, st
+  Early stopping triggered, with best val acc: 53.579527048914805, st
+  Early stopping triggered, with best val acc: 53.67670877874959, st
+  Early stopping triggered, with best val acc: 54.713313896987366, st
+   Total best acc changed to 55.68513119533527,  
+                            at epoch 0/50 at the coin 15
+  Early stopping triggered, with best val acc: 55.68513119533527, st
+  Early stopping triggered, with best val acc: 50.34013605442177, st
+  Early stopping triggered, with best val acc: 52.60770975056689, st
+   Total best acc changed to 57.75834143181082,  
+                            at epoch 2/50 at the coin 15
+   Early stopping triggered, with best val acc: 57.75834143181082, nd
+  Early stopping triggered, with best val acc: 52.704891480401685, st
+  Early stopping triggered, with best val acc: 49.65986394557823, st
+   Total best acc changed to 49.27113702623907,  
+                            at epoch 0/50 at the coin 20
+   Total best acc changed to 52.60770975056689,  
+                            at epoch 10/50 at the coin 20
+   Total best acc changed to 54.0006478781989,  
+                            at epoch 13/50 at the coin 20
+  Early stopping triggered, with best val acc: 54.0006478781989, st
+  Early stopping triggered, with best val acc: 53.70910268869453, st
+  Early stopping triggered, with best val acc: 51.60349854227405, st
+  Early stopping triggered, with best val acc: 50.890832523485585, st
+  Early stopping triggered, with best val acc: 46.90638160025915, st
+  Early stopping triggered, with best val acc: 48.5584710074506, st
+  Early stopping triggered, with best val acc: 53.02883057985099, st
+  Early stopping triggered, with best val acc: 50.50210560414642, st
+  Early stopping triggered, with best val acc: 50.56689342403628, st
+  Early stopping triggered, with best val acc: 52.445740200842245, st
+   Total best acc changed to 54.259799157758344,  
+                            at epoch 0/50 at the coin 20
+   Total best acc changed to 55.19922254616132,  
+                            at epoch 1/50 at the coin 20
+   Total best acc changed to 55.68513119533527,  
+                            at epoch 2/50 at the coin 20
+  Early stopping triggered, with best val acc: 55.68513119533527, st
+  Early stopping triggered, with best val acc: 53.48234531908001, st
+  Early stopping triggered, with best val acc: 52.478134110787174, st
+  Early stopping triggered, with best val acc: 53.22319403952057, st
+  Early stopping triggered, with best val acc: 53.19080012957564, st
+  Early stopping triggered, with best val acc: 54.61613216715258, st
+  Early stopping triggered, with best val acc: 52.704891480401685, st
+  Early stopping triggered, with best val acc: 53.32037576935536, st
+   Total best acc changed to 56.81891804340784,  
+                            at epoch 29/50 at the coin 20
+  Early stopping triggered, with best val acc: 50.79365079365079, st
+   Total best acc changed to 47.58665370910269,  
+                            at epoch 0/50 at the coin 18
+   Total best acc changed to 49.46550048590865,  
+                            at epoch 1/50 at the coin 18
+  Early stopping triggered, with best val acc: 49.46550048590865, st
+   Total best acc changed to 51.31195335276968,  
+                            at epoch 1/50 at the coin 18
+   Total best acc changed to 51.60349854227405,  
+                            at epoch 22/50 at the coin 18
+  Early stopping triggered, with best val acc: 51.60349854227405, st
+  Early stopping triggered, with best val acc: 51.05280207321024, st
+[I 2025-01-11 02:05:09,600] Trial 7 finished with value: 55.71752510528021 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 4, 'drop_prob': 0.32750153442995034, 'batch_size': 64, 'l1_lambda': 0.0002677239684405952}. Best is trial 2 with value: 58.79494655004859.
+[I 2025-01-11 02:33:45,645] Trial 8 finished with value: 56.36540330417881 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.25129263325843176, 'batch_size': 128, 'l1_lambda': 0.005681979204268469}. Best is trial 2 with value: 58.79494655004859.
+[I 2025-01-11 03:16:53,770] Trial 9 finished with value: 57.628765792031096 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.3906607708243772, 'batch_size': 32, 'l1_lambda': 0.0004004326584954222}. Best is trial 2 with value: 58.79494655004859.
+   Total best acc changed to 51.765468091998706,  
+                            at epoch 4/50 at the coin 18
+   Total best acc changed to 52.704891480401685,  
+                            at epoch 11/50 at the coin 18
+   Total best acc changed to 53.158406219630706,  
+                            at epoch 16/50 at the coin 18
+  Early stopping triggered, with best val acc: 53.158406219630706, st
+   Total best acc changed to 53.352769679300295,  
+                            at epoch 7/50 at the coin 18
+   Total best acc changed to 53.64431486880466,  
+                            at epoch 11/50 at the coin 18
+   Total best acc changed to 54.06543569808876,  
+                            at epoch 19/50 at the coin 18
+  Early stopping triggered, with best val acc: 54.06543569808876, st
+  Early stopping triggered, with best val acc: 53.385163589245224, st
+  Early stopping triggered, with best val acc: 48.59086491739553, st
+  Early stopping triggered, with best val acc: 52.54292193067703, st
+   Total best acc changed to 54.13022351797862,  
+                            at epoch 5/50 at the coin 18
+  Early stopping triggered, with best val acc: 54.13022351797862, st
+   Total best acc changed to 54.259799157758344,  
+                            at epoch 3/50 at the coin 18
+  Early stopping triggered, with best val acc: 54.259799157758344, st
+  Early stopping triggered, with best val acc: 47.262714609653386, st
+  Early stopping triggered, with best val acc: 51.47392290249433, st
+   Total best acc changed to 54.81049562682216,  
+                            at epoch 27/50 at the coin 18
+   Total best acc changed to 55.71752510528021,  
+                            at epoch 29/50 at the coin 18
+  Early stopping triggered, with best val acc: 53.51473922902494, st
+  Early stopping triggered, with best val acc: 52.12180110139294, st
+  Early stopping triggered, with best val acc: 52.86686103012634, st
+  Early stopping triggered, with best val acc: 48.62325882734046, st
+  Early stopping triggered, with best val acc: 51.86264982183349, st
+  Early stopping triggered, with best val acc: 50.40492387431163, st
+  Early stopping triggered, with best val acc: 52.86686103012634, st
+   Total best acc changed to 45.64301911240687,  
+                            at epoch 0/50 at the coin 9
+   Total best acc changed to 48.234531908001294,  
+                            at epoch 1/50 at the coin 9
+   Total best acc changed to 49.53028830579851,  
+                            at epoch 2/50 at the coin 9
+   Total best acc changed to 49.85422740524781,  
+                            at epoch 7/50 at the coin 9
+   Total best acc changed to 50.30774214447684,  
+                            at epoch 21/50 at the coin 9
+   Total best acc changed to 51.797862001943635,  
+                            at epoch 27/50 at the coin 9
+  Early stopping triggered, with best val acc: 51.797862001943635, st
+  Early stopping triggered, with best val acc: 50.08098477486232, st
+  Early stopping triggered, with best val acc: 47.359896339488174, st
+  Early stopping triggered, with best val acc: 51.797862001943635, st
+   Total best acc changed to 52.38095238095238,  
+                            at epoch 0/50 at the coin 9
+   Total best acc changed to 52.899254940071266,  
+                            at epoch 6/50 at the coin 9
+  Early stopping triggered, with best val acc: 52.899254940071266, st
+   Total best acc changed to 53.44995140913508,  
+                            at epoch 4/50 at the coin 9
+   Total best acc changed to 54.81049562682216,  
+                            at epoch 5/50 at the coin 9
+  Early stopping triggered, with best val acc: 54.81049562682216, st
+  Early stopping triggered, with best val acc: 51.765468091998706, st
+   Total best acc changed to 55.10204081632653,  
+                            at epoch 8/50 at the coin 9
+  Early stopping triggered, with best val acc: 55.10204081632653, st
+  Early stopping triggered, with best val acc: 48.882410106899904, st
+   Total best acc changed to 55.78231292517007,  
+                            at epoch 0/50 at the coin 9
+  Early stopping triggered, with best val acc: 55.78231292517007, st
+  Early stopping triggered, with best val acc: 52.60770975056689, st
+  Early stopping triggered, with best val acc: 54.97246517654681, st
+  Early stopping triggered, with best val acc: 51.95983155166829, st
+  Early stopping triggered, with best val acc: 54.55134434726271, st
+  Early stopping triggered, with best val acc: 54.35698088759313, st
+  Early stopping triggered, with best val acc: 53.77389050858439, st
+   Total best acc changed to 55.91188856494979,  
+                            at epoch 22/50 at the coin 9
+   Total best acc changed to 56.36540330417881,  
+                            at epoch 32/50 at the coin 9
+  Early stopping triggered, with best val acc: 50.95562034337544, st
+  Early stopping triggered, with best val acc: 48.234531908001294, st
+  Early stopping triggered, with best val acc: 51.31195335276968, st
+   Total best acc changed to 45.83738257207645,  
+                            at epoch 0/50 at the coin 5
+   Total best acc changed to 45.9993521218011,  
+                            at epoch 1/50 at the coin 5
+   Total best acc changed to 49.59507612568837,  
+                            at epoch 2/50 at the coin 5
+   Total best acc changed to 51.21477162293489,  
+                            at epoch 8/50 at the coin 5
+  Early stopping triggered, with best val acc: 51.21477162293489, st
+   Total best acc changed to 51.24716553287982,  
+                            at epoch 11/50 at the coin 5
+   Total best acc changed to 51.31195335276968,  
+                            at epoch 12/50 at the coin 5
+   Total best acc changed to 51.95983155166829,  
+                            at epoch 16/50 at the coin 5
+  Early stopping triggered, with best val acc: 51.95983155166829, st
+   Total best acc changed to 52.024619371558146,  
+                            at epoch 5/50 at the coin 5
+   Total best acc changed to 52.057013281503075,  
+                            at epoch 19/50 at the coin 5
+   Total best acc changed to 52.899254940071266,  
+                            at epoch 28/50 at the coin 5
+  Early stopping triggered, with best val acc: 52.899254940071266, st
+  Early stopping triggered, with best val acc: 51.89504373177842, st
+  Early stopping triggered, with best val acc: 51.765468091998706, st
+  Early stopping triggered, with best val acc: 51.63589245221898, st
+   Total best acc changed to 53.12601230968578,  
+                            at epoch 28/50 at the coin 5
+  Early stopping triggered, with best val acc: 53.12601230968578, st
+  Early stopping triggered, with best val acc: 51.05280207321024, st
+   Total best acc changed to 53.44995140913508,  
+                            at epoch 11/50 at the coin 5
+   Total best acc changed to 53.806284418529316,  
+                            at epoch 27/50 at the coin 5
+   Total best acc changed to 54.29219306770327,  
+                            at epoch 34/50 at the coin 5
+  Early stopping triggered, with best val acc: 49.46550048590865, st
+  Early stopping triggered, with best val acc: 52.251376741172656, st
+  Early stopping triggered, with best val acc: 52.60770975056689, st
+  Early stopping triggered, with best val acc: 52.31616456106252, st
+  Early stopping triggered, with best val acc: 52.1865889212828, st
+  Early stopping triggered, with best val acc: 54.13022351797862, st
+  Early stopping triggered, with best val acc: 48.33171363783609, st
+  Early stopping triggered, with best val acc: 52.99643666990606, st
+   Total best acc changed to 57.628765792031096,  
+                            at epoch 3/50 at the coin 5
+   Early stopping triggered, with best val acc: 57.628765792031096, nd
+  Early stopping triggered, with best val acc: 50.98801425332037, st
+   Total best acc changed to 47.19792678976352,  
+                            at epoch 0/50 at the coin 9
+   Total best acc changed to 47.68383543893748,  
+                            at epoch 1/50 at the coin 9
+   Total best acc changed to 53.32037576935536,  
+                            at epoch 2/50 at the coin 9
+[I 2025-01-11 03:59:26,557] Trial 10 finished with value: 57.402008422416586 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.26747364740453466, 'batch_size': 32, 'l1_lambda': 8.190914286518776e-05}. Best is trial 2 with value: 58.79494655004859.
+[I 2025-01-11 04:31:12,596] Trial 11 finished with value: 59.15127955944283 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.30836465817763503, 'batch_size': 64, 'l1_lambda': 1.3313696888188591e-05}. Best is trial 11 with value: 59.15127955944283.
+[I 2025-01-11 05:11:16,695] Trial 12 finished with value: 56.36540330417881 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.36351827436997314, 'batch_size': 32, 'l1_lambda': 1.0849940650644154e-05}. Best is trial 11 with value: 59.15127955944283.
+   Total best acc changed to 54.06543569808876,  
+                            at epoch 21/50 at the coin 9
+  Early stopping triggered, with best val acc: 54.06543569808876, st
+  Early stopping triggered, with best val acc: 51.27955944282475, st
+  Early stopping triggered, with best val acc: 52.76967930029154, st
+  Early stopping triggered, with best val acc: 51.05280207321024, st
+  Early stopping triggered, with best val acc: 53.579527048914805, st
+  Early stopping triggered, with best val acc: 53.02883057985099, st
+  Early stopping triggered, with best val acc: 52.28377065111759, st
+   Total best acc changed to 54.97246517654681,  
+                            at epoch 0/50 at the coin 9
+  Early stopping triggered, with best val acc: 54.97246517654681, st
+  Early stopping triggered, with best val acc: 51.05280207321024, st
+  Early stopping triggered, with best val acc: 53.09361839974085, st
+  Early stopping triggered, with best val acc: 48.94719792678976, st
+  Early stopping triggered, with best val acc: 51.05280207321024, st
+  Early stopping triggered, with best val acc: 52.964042759961124, st
+   Total best acc changed to 56.62455458373826,  
+                            at epoch 12/50 at the coin 9
+  Early stopping triggered, with best val acc: 56.62455458373826, st
+  Early stopping triggered, with best val acc: 50.40492387431163, st
+   Total best acc changed to 57.402008422416586,  
+                            at epoch 1/50 at the coin 9
+   Early stopping triggered, with best val acc: 57.402008422416586, nd
+  Early stopping triggered, with best val acc: 52.76967930029154, st
+  Early stopping triggered, with best val acc: 51.27955944282475, st
+  Early stopping triggered, with best val acc: 55.74991901522514, st
+   Total best acc changed to 47.262714609653386,  
+                            at epoch 0/50 at the coin 18
+   Total best acc changed to 49.91901522513768,  
+                            at epoch 5/50 at the coin 18
+   Total best acc changed to 50.11337868480726,  
+                            at epoch 23/50 at the coin 18
+   Total best acc changed to 50.3725299643667,  
+                            at epoch 30/50 at the coin 18
+   Total best acc changed to 51.50631681243926,  
+                            at epoch 32/50 at the coin 18
+   Total best acc changed to 51.60349854227405,  
+                            at epoch 48/50 at the coin 18
+  Early stopping triggered, with best val acc: 47.91059280855199, st
+  Early stopping triggered, with best val acc: 49.36831875607386, st
+   Total best acc changed to 54.259799157758344,  
+                            at epoch 2/50 at the coin 18
+   Total best acc changed to 54.745707806932295,  
+                            at epoch 5/50 at the coin 18
+   Total best acc changed to 56.68934240362812,  
+                            at epoch 7/50 at the coin 18
+  Early stopping triggered, with best val acc: 56.68934240362812, st
+  Early stopping triggered, with best val acc: 52.76967930029154, st
+  Early stopping triggered, with best val acc: 54.38937479753806, st
+  Early stopping triggered, with best val acc: 53.385163589245224, st
+  Early stopping triggered, with best val acc: 53.74149659863946, st
+  Early stopping triggered, with best val acc: 50.30774214447684, st
+   Total best acc changed to 56.72173631357305,  
+                            at epoch 1/50 at the coin 18
+   Total best acc changed to 59.05409782960803,  
+                            at epoch 2/50 at the coin 18
+   Total best acc changed to 59.15127955944283,  
+                            at epoch 4/50 at the coin 18
+   Early stopping triggered, with best val acc: 59.15127955944283, nd
+  Early stopping triggered, with best val acc: 53.41755749919015, st
+  Early stopping triggered, with best val acc: 55.166828636216394, st
+  Early stopping triggered, with best val acc: 49.65986394557823, st
+  Early stopping triggered, with best val acc: 54.745707806932295, st
+  Early stopping triggered, with best val acc: 52.83446712018141, st
+  Early stopping triggered, with best val acc: 53.547133138969876, st
+  Early stopping triggered, with best val acc: 52.024619371558146, st
+  Early stopping triggered, with best val acc: 50.56689342403628, st
+  Early stopping triggered, with best val acc: 55.00485908649174, st
+   Total best acc changed to 53.22319403952057,  
+                            at epoch 0/50 at the coin 10
+   Total best acc changed to 53.96825396825397,  
+                            at epoch 2/50 at the coin 10
+  Early stopping triggered, with best val acc: 53.96825396825397, st
+  Early stopping triggered, with best val acc: 50.56689342403628, st
+  Early stopping triggered, with best val acc: 53.09361839974085, st
+  Early stopping triggered, with best val acc: 52.445740200842245, st
+  Early stopping triggered, with best val acc: 51.40913508260447, st
+  Early stopping triggered, with best val acc: 50.72886297376093, st
+  Early stopping triggered, with best val acc: 52.057013281503075, st
+  Early stopping triggered, with best val acc: 48.882410106899904, st
+   Total best acc changed to 54.90767735665695,  
+                            at epoch 20/50 at the coin 10
+  Early stopping triggered, with best val acc: 54.90767735665695, st
+   Total best acc changed to 56.36540330417881,  
+                            at epoch 0/50 at the coin 10
+  Early stopping triggered, with best val acc: 56.36540330417881, st
+  Early stopping triggered, with best val acc: 53.32037576935536, st
+  Early stopping triggered, with best val acc: 55.26401036605118, st
+  Early stopping triggered, with best val acc: 49.69225785552316, st
+  Early stopping triggered, with best val acc: 52.99643666990606, st
+  Early stopping triggered, with best val acc: 53.02883057985099, st
+  Early stopping triggered, with best val acc: 52.83446712018141, st
+  Early stopping triggered, with best val acc: 51.4415289925494, st
+  Early stopping triggered, with best val acc: 53.611920958859734, st
+  Early stopping triggered, with best val acc: 52.99643666990606, st
+  Early stopping triggered, with best val acc: 48.169744088111436, st
+   Total best acc changed to 46.22610949141561,  
+                            at epoch 0/50 at the coin 14
+   Total best acc changed to 52.445740200842245,  
+                            at epoch 1/50 at the coin 14
+   Total best acc changed to 52.5105280207321,  
+                            at epoch 22/50 at the coin 14
+  Early stopping triggered, with best val acc: 52.5105280207321, st
+   Total best acc changed to 57.11046323291221,  
+                            at epoch 0/50 at the coin 14
+   Early stopping triggered, with best val acc: 57.11046323291221, nd
+  Early stopping triggered, with best val acc: 47.71622934888241, st
+  Early stopping triggered, with best val acc: 49.01198574667963, st
+  Early stopping triggered, with best val acc: 53.67670877874959, st
+  Early stopping triggered, with best val acc: 52.83446712018141, st
+  Early stopping triggered, with best val acc: 53.611920958859734, st
+  Early stopping triggered, with best val acc: 53.158406219630706, st
+  Early stopping triggered, with best val acc: 51.02040816326531, st
+  Early stopping triggered, with best val acc: 50.56689342403628, st
+  Early stopping triggered, with best val acc: 54.87528344671202, st
+  Early stopping triggered, with best val acc: 52.024619371558146, st
+   Total best acc changed to 57.33722060252673,  
+                            at epoch 2/50 at the coin 14
+   Early stopping triggered, with best val acc: 57.33722060252673, nd
+  Early stopping triggered, with best val acc: 52.34855847100745, st
+  Early stopping triggered, with best val acc: 54.940071266601876, st
+  Early stopping triggered, with best val acc: 51.70068027210884, st
+  Early stopping triggered, with best val acc: 52.931648850016195, st
+  Early stopping triggered, with best val acc: 51.47392290249433, st
+   Total best acc changed to 57.628765792031096,  
+                            at epoch 9/50 at the coin 14
+   Total best acc changed to 58.40621963070943,  
+                            at epoch 18/50 at the coin 14
+   Early stopping triggered, with best val acc: 58.40621963070943, nd
+[I 2025-01-11 05:43:32,395] Trial 13 finished with value: 59.15127955944283 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.30112194215161137, 'batch_size': 64, 'l1_lambda': 6.262421819195328e-05}. Best is trial 11 with value: 59.15127955944283.
+[I 2025-01-11 06:18:41,375] Trial 14 finished with value: 57.175251052802075 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.2774768479059585, 'batch_size': 64, 'l1_lambda': 9.453939507077484e-05}. Best is trial 11 with value: 59.15127955944283.
+[I 2025-01-11 06:52:26,935] Trial 15 finished with value: 60.18788467768059 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.23853364371371044, 'batch_size': 64, 'l1_lambda': 0.0003209338473538532}. Best is trial 15 with value: 60.18788467768059.
+[I 2025-01-11 07:28:15,751] Trial 16 finished with value: 58.01749271137026 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.21792099990239694, 'batch_size': 64, 'l1_lambda': 0.0011667423541167083}. Best is trial 15 with value: 60.18788467768059.
+   Total best acc changed to 59.15127955944283,  
+                            at epoch 0/50 at the coin 14
+   Early stopping triggered, with best val acc: 59.15127955944283, nd
+   Total best acc changed to 47.19792678976352,  
+                            at epoch 0/50 at the coin 18
+   Total best acc changed to 47.42468415937804,  
+                            at epoch 3/50 at the coin 18
+   Total best acc changed to 48.26692581794622,  
+                            at epoch 4/50 at the coin 18
+   Total best acc changed to 48.91480401684483,  
+                            at epoch 7/50 at the coin 18
+   Total best acc changed to 50.242954324586975,  
+                            at epoch 9/50 at the coin 18
+   Total best acc changed to 50.30774214447684,  
+                            at epoch 20/50 at the coin 18
+   Total best acc changed to 52.1865889212828,  
+                            at epoch 22/50 at the coin 18
+  Early stopping triggered, with best val acc: 52.1865889212828, st
+  Early stopping triggered, with best val acc: 48.62325882734046, st
+   Total best acc changed to 52.5105280207321,  
+                            at epoch 1/50 at the coin 18
+   Total best acc changed to 53.74149659863946,  
+                            at epoch 3/50 at the coin 18
+   Total best acc changed to 54.06543569808876,  
+                            at epoch 6/50 at the coin 18
+   Total best acc changed to 54.35698088759313,  
+                            at epoch 19/50 at the coin 18
+   Total best acc changed to 55.10204081632653,  
+                            at epoch 20/50 at the coin 18
+  Early stopping triggered, with best val acc: 55.10204081632653, st
+  Early stopping triggered, with best val acc: 53.611920958859734, st
+  Early stopping triggered, with best val acc: 53.77389050858439, st
+  Early stopping triggered, with best val acc: 53.51473922902494, st
+  Early stopping triggered, with best val acc: 51.765468091998706, st
+  Early stopping triggered, with best val acc: 48.5584710074506, st
+  Early stopping triggered, with best val acc: 48.97959183673469, st
+  Early stopping triggered, with best val acc: 54.09782960803369, st
+  Early stopping triggered, with best val acc: 53.93586005830904, st
+  Early stopping triggered, with best val acc: 51.40913508260447, st
+  Early stopping triggered, with best val acc: 51.18237771298996, st
+  Early stopping triggered, with best val acc: 54.486556527372855, st
+   Total best acc changed to 55.78231292517007,  
+                            at epoch 0/50 at the coin 18
+   Total best acc changed to 56.04146420472951,  
+                            at epoch 17/50 at the coin 18
+   Total best acc changed to 57.175251052802075,  
+                            at epoch 22/50 at the coin 18
+   Early stopping triggered, with best val acc: 57.175251052802075, nd
+  Early stopping triggered, with best val acc: 52.54292193067703, st
+  Early stopping triggered, with best val acc: 50.08098477486232, st
+  Early stopping triggered, with best val acc: 47.521865889212826, st
+  Early stopping triggered, with best val acc: 51.95983155166829, st
+  Early stopping triggered, with best val acc: 54.38937479753806, st
+   Total best acc changed to 47.748623258827344,  
+                            at epoch 0/50 at the coin 15
+   Total best acc changed to 47.87819889860706,  
+                            at epoch 8/50 at the coin 15
+   Total best acc changed to 50.59928733398121,  
+                            at epoch 11/50 at the coin 15
+  Early stopping triggered, with best val acc: 50.59928733398121, st
+  Early stopping triggered, with best val acc: 49.59507612568837, st
+   Total best acc changed to 51.765468091998706,  
+                            at epoch 3/50 at the coin 15
+  Early stopping triggered, with best val acc: 51.765468091998706, st
+   Total best acc changed to 51.95983155166829,  
+                            at epoch 3/50 at the coin 15
+  Early stopping triggered, with best val acc: 51.95983155166829, st
+   Total best acc changed to 52.34855847100745,  
+                            at epoch 0/50 at the coin 15
+   Total best acc changed to 56.268221574344025,  
+                            at epoch 1/50 at the coin 15
+   Total best acc changed to 57.207644962747004,  
+                            at epoch 3/50 at the coin 15
+   Early stopping triggered, with best val acc: 57.207644962747004, nd
+  Early stopping triggered, with best val acc: 53.12601230968578, st
+  Early stopping triggered, with best val acc: 51.50631681243926, st
+  Early stopping triggered, with best val acc: 54.84288953676709, st
+  Early stopping triggered, with best val acc: 49.6274700356333, st
+  Early stopping triggered, with best val acc: 51.02040816326531, st
+   Total best acc changed to 58.049886621315196,  
+                            at epoch 8/50 at the coin 15
+   Total best acc changed to 58.40621963070943,  
+                            at epoch 11/50 at the coin 15
+   Total best acc changed to 60.18788467768059,  
+                            at epoch 13/50 at the coin 15
+   Early stopping triggered, with best val acc: 60.18788467768059, nd
+  Early stopping triggered, with best val acc: 52.445740200842245, st
+  Early stopping triggered, with best val acc: 56.68934240362812, st
+  Early stopping triggered, with best val acc: 50.56689342403628, st
+  Early stopping triggered, with best val acc: 54.19501133786848, st
+  Early stopping triggered, with best val acc: 54.29219306770327, st
+  Early stopping triggered, with best val acc: 52.83446712018141, st
+  Early stopping triggered, with best val acc: 56.59216067379333, st
+  Early stopping triggered, with best val acc: 53.70910268869453, st
+   Total best acc changed to 46.58244250080985,  
+                            at epoch 0/50 at the coin 10
+   Total best acc changed to 48.65565273728539,  
+                            at epoch 2/50 at the coin 10
+   Total best acc changed to 52.640103660511826,  
+                            at epoch 4/50 at the coin 10
+   Total best acc changed to 54.518950437317784,  
+                            at epoch 7/50 at the coin 10
+  Early stopping triggered, with best val acc: 54.518950437317784, st
+  Early stopping triggered, with best val acc: 50.696469063816004, st
+  Early stopping triggered, with best val acc: 53.19080012957564, st
+   Total best acc changed to 57.30482669258179,  
+                            at epoch 0/50 at the coin 10
+   Total best acc changed to 58.01749271137026,  
+                            at epoch 11/50 at the coin 10
+   Early stopping triggered, with best val acc: 58.01749271137026, nd
+  Early stopping triggered, with best val acc: 50.53449951409135, st
+  Early stopping triggered, with best val acc: 50.82604470359573, st
+  Early stopping triggered, with best val acc: 52.15419501133787, st
+  Early stopping triggered, with best val acc: 53.838678328474245, st
+  Early stopping triggered, with best val acc: 53.611920958859734, st
+  Early stopping triggered, with best val acc: 52.21898283122773, st
+  Early stopping triggered, with best val acc: 51.40913508260447, st
+  Early stopping triggered, with best val acc: 54.58373825720764, st
+  Early stopping triggered, with best val acc: 53.41755749919015, st
+  Early stopping triggered, with best val acc: 52.964042759961124, st
+  Early stopping triggered, with best val acc: 52.60770975056689, st
+  Early stopping triggered, with best val acc: 53.02883057985099, st
+  Early stopping triggered, with best val acc: 48.81762228701004, st
+  Early stopping triggered, with best val acc: 56.300615484288954, st
+  Early stopping triggered, with best val acc: 51.08519598315517, st
+   Total best acc changed to 51.24716553287982,  
+                            at epoch 0/50 at the coin 13
+   Total best acc changed to 54.22740524781341,  
+                            at epoch 3/50 at the coin 13
+   Total best acc changed to 54.97246517654681,  
+                            at epoch 5/50 at the coin 13
+   Total best acc changed to 55.26401036605118,  
+                            at epoch 8/50 at the coin 13
+  Early stopping triggered, with best val acc: 55.26401036605118, st
+[I 2025-01-11 08:00:10,265] Trial 17 finished with value: 58.309037900874635 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.2398258072595372, 'batch_size': 64, 'l1_lambda': 0.00029319474936035695}. Best is trial 15 with value: 60.18788467768059.
+[I 2025-01-11 08:32:01,943] Trial 18 finished with value: 58.79494655004859 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.23843775548625137, 'batch_size': 64, 'l1_lambda': 0.0007533176592691715}. Best is trial 15 with value: 60.18788467768059.
+[I 2025-01-11 09:04:22,495] Trial 19 finished with value: 58.85973436993845 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.2610717180933331, 'batch_size': 64, 'l1_lambda': 0.004308530719567761}. Best is trial 15 with value: 60.18788467768059.
+  Early stopping triggered, with best val acc: 51.149983803045025, st
+  Early stopping triggered, with best val acc: 50.79365079365079, st
+  Early stopping triggered, with best val acc: 52.057013281503075, st
+   Total best acc changed to 55.49076773566569,  
+                            at epoch 0/50 at the coin 13
+  Early stopping triggered, with best val acc: 55.49076773566569, st
+  Early stopping triggered, with best val acc: 51.538710722384195, st
+  Early stopping triggered, with best val acc: 48.5584710074506, st
+   Total best acc changed to 57.9527048914804,  
+                            at epoch 1/50 at the coin 13
+   Early stopping triggered, with best val acc: 57.9527048914804, nd
+  Early stopping triggered, with best val acc: 54.06543569808876, st
+  Early stopping triggered, with best val acc: 54.29219306770327, st
+  Early stopping triggered, with best val acc: 51.765468091998706, st
+  Early stopping triggered, with best val acc: 50.82604470359573, st
+   Total best acc changed to 58.309037900874635,  
+                            at epoch 0/50 at the coin 13
+   Early stopping triggered, with best val acc: 58.309037900874635, nd
+  Early stopping triggered, with best val acc: 52.60770975056689, st
+  Early stopping triggered, with best val acc: 55.847100745059926, st
+  Early stopping triggered, with best val acc: 51.95983155166829, st
+  Early stopping triggered, with best val acc: 48.39650145772595, st
+  Early stopping triggered, with best val acc: 52.899254940071266, st
+  Early stopping triggered, with best val acc: 54.29219306770327, st
+  Early stopping triggered, with best val acc: 51.31195335276968, st
+   Total best acc changed to 46.420472951085195,  
+                            at epoch 0/50 at the coin 6
+   Total best acc changed to 47.554259799157755,  
+                            at epoch 1/50 at the coin 6
+  Early stopping triggered, with best val acc: 47.554259799157755, st
+   Total best acc changed to 48.49368318756074,  
+                            at epoch 1/50 at the coin 6
+   Total best acc changed to 49.85422740524781,  
+                            at epoch 3/50 at the coin 6
+   Total best acc changed to 50.242954324586975,  
+                            at epoch 6/50 at the coin 6
+  Early stopping triggered, with best val acc: 50.242954324586975, st
+   Total best acc changed to 52.251376741172656,  
+                            at epoch 0/50 at the coin 6
+   Total best acc changed to 55.10204081632653,  
+                            at epoch 1/50 at the coin 6
+   Total best acc changed to 58.79494655004859,  
+                            at epoch 2/50 at the coin 6
+   Early stopping triggered, with best val acc: 58.79494655004859, nd
+  Early stopping triggered, with best val acc: 54.97246517654681, st
+  Early stopping triggered, with best val acc: 51.24716553287982, st
+  Early stopping triggered, with best val acc: 50.82604470359573, st
+  Early stopping triggered, with best val acc: 53.90346614836411, st
+  Early stopping triggered, with best val acc: 54.06543569808876, st
+  Early stopping triggered, with best val acc: 55.19922254616132, st
+  Early stopping triggered, with best val acc: 48.234531908001294, st
+  Early stopping triggered, with best val acc: 53.32037576935536, st
+  Early stopping triggered, with best val acc: 49.141561386459344, st
+  Early stopping triggered, with best val acc: 54.03304178814383, st
+  Early stopping triggered, with best val acc: 53.12601230968578, st
+  Early stopping triggered, with best val acc: 50.76125688370586, st
+  Early stopping triggered, with best val acc: 52.54292193067703, st
+  Early stopping triggered, with best val acc: 53.28798185941043, st
+   Total best acc changed to 46.77680596047943,  
+                            at epoch 0/50 at the coin 14
+   Total best acc changed to 47.39229024943311,  
+                            at epoch 1/50 at the coin 14
+   Total best acc changed to 47.8134110787172,  
+                            at epoch 2/50 at the coin 14
+   Total best acc changed to 48.39650145772595,  
+                            at epoch 13/50 at the coin 14
+  Early stopping triggered, with best val acc: 48.39650145772595, st
+   Total best acc changed to 52.41334629089731,  
+                            at epoch 0/50 at the coin 14
+   Total best acc changed to 54.16261742792355,  
+                            at epoch 3/50 at the coin 14
+  Early stopping triggered, with best val acc: 54.16261742792355, st
+   Total best acc changed to 58.85973436993845,  
+                            at epoch 0/50 at the coin 14
+   Early stopping triggered, with best val acc: 58.85973436993845, nd
+  Early stopping triggered, with best val acc: 55.32879818594105, st
+  Early stopping triggered, with best val acc: 49.40071266601879, st
+   Early stopping triggered, with best val acc: 57.466796242306444, nd
+   Early stopping triggered, with best val acc: 57.56397797214124, nd
+   Early stopping triggered, with best val acc: 58.73015873015873, nd
+  Early stopping triggered, with best val acc: 53.41755749919015, st
+  Early stopping triggered, with best val acc: 55.620343375445415, st
+  Early stopping triggered, with best val acc: 56.91609977324263, st
+  Early stopping triggered, with best val acc: 51.92743764172336, st
+  Early stopping triggered, with best val acc: 53.93586005830904, st
+  Early stopping triggered, with best val acc: 53.51473922902494, st
+  Early stopping triggered, with best val acc: 52.54292193067703, st
+  Early stopping triggered, with best val acc: 48.52607709750567, st
+  Early stopping triggered, with best val acc: 51.24716553287982, st
+  Early stopping triggered, with best val acc: 51.149983803045025, st
+   Early stopping triggered, with best val acc: 57.402008422416586, nd
+   Total best acc changed to 50.048590864917394,  
+                            at epoch 0/50 at the coin 3
+   Total best acc changed to 52.15419501133787,  
+                            at epoch 10/50 at the coin 3
+  Early stopping triggered, with best val acc: 52.15419501133787, st
+   Total best acc changed to 52.704891480401685,  
+                            at epoch 1/50 at the coin 3
+   Total best acc changed to 53.09361839974085,  
+                            at epoch 2/50 at the coin 3
+   Total best acc changed to 53.158406219630706,  
+                            at epoch 5/50 at the coin 3
+   Total best acc changed to 53.41755749919015,  
+                            at epoch 6/50 at the coin 3
+   Total best acc changed to 54.55134434726271,  
+                            at epoch 10/50 at the coin 3
+   Total best acc changed to 54.84288953676709,  
+                            at epoch 13/50 at the coin 3
+   Total best acc changed to 55.74991901522514,  
+                            at epoch 30/50 at the coin 3
+   Total best acc changed to 56.04146420472951,  
+                            at epoch 33/50 at the coin 3
+  Early stopping triggered, with best val acc: 52.899254940071266, st
+  Early stopping triggered, with best val acc: 48.850016196954975, st
+  Early stopping triggered, with best val acc: 55.29640427599611, st
+  Early stopping triggered, with best val acc: 50.72886297376093, st
+  Early stopping triggered, with best val acc: 46.80919987042436, st
+  Early stopping triggered, with best val acc: 51.24716553287982, st
+  Early stopping triggered, with best val acc: 51.830255911888564, st
+  Early stopping triggered, with best val acc: 53.385163589245224, st
+   Total best acc changed to 56.1386459345643,  
+                            at epoch 15/50 at the coin 3
+   Total best acc changed to 56.268221574344025,  
+                            at epoch 28/50 at the coin 3
+  Early stopping triggered, with best val acc: 56.268221574344025, st
+  Early stopping triggered, with best val acc: 53.579527048914805, st
+  Early stopping triggered, with best val acc: 54.97246517654681, st
+  Early stopping triggered, with best val acc: 54.06543569808876, st
+  Early stopping triggered, with best val acc: 51.765468091998706, st
+  Early stopping triggered, with best val acc: 53.28798185941043, st
+  Early stopping triggered, with best val acc: 53.06122448979592, st
+[I 2025-01-11 09:40:35,274] Trial 20 finished with value: 56.268221574344025 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.28762634722074387, 'batch_size': 64, 'l1_lambda': 0.0028259950859511416}. Best is trial 15 with value: 60.18788467768059.
+[I 2025-01-11 10:18:28,663] Trial 21 finished with value: 57.98509880142533 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.3021960343092633, 'batch_size': 64, 'l1_lambda': 5.648358730955461e-05}. Best is trial 15 with value: 60.18788467768059.
+[I 2025-01-11 10:54:16,278] Trial 22 finished with value: 56.65694849368319 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.3502118832979189, 'batch_size': 64, 'l1_lambda': 0.00015360568493383598}. Best is trial 15 with value: 60.18788467768059.
+[I 2025-01-11 11:28:50,226] Trial 23 finished with value: 57.79073534175575 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.3197286551511202, 'batch_size': 64, 'l1_lambda': 0.0001805507544592099}. Best is trial 15 with value: 60.18788467768059.
+  Early stopping triggered, with best val acc: 56.235827664399096, st
+  Early stopping triggered, with best val acc: 54.97246517654681, st
+   Total best acc changed to 47.295108519598315,  
+                            at epoch 0/50 at the coin 12
+   Total best acc changed to 47.65144152899255,  
+                            at epoch 12/50 at the coin 12
+   Total best acc changed to 48.49368318756074,  
+                            at epoch 15/50 at the coin 12
+   Total best acc changed to 48.52607709750567,  
+                            at epoch 25/50 at the coin 12
+  Early stopping triggered, with best val acc: 48.52607709750567, st
+   Total best acc changed to 50.27534823453191,  
+                            at epoch 4/50 at the coin 12
+  Early stopping triggered, with best val acc: 50.27534823453191, st
+   Total best acc changed to 50.82604470359573,  
+                            at epoch 7/50 at the coin 12
+   Total best acc changed to 51.27955944282475,  
+                            at epoch 22/50 at the coin 12
+  Early stopping triggered, with best val acc: 51.27955944282475, st
+   Total best acc changed to 51.95983155166829,  
+                            at epoch 0/50 at the coin 12
+   Total best acc changed to 54.64852607709751,  
+                            at epoch 1/50 at the coin 12
+  Early stopping triggered, with best val acc: 54.64852607709751, st
+  Early stopping triggered, with best val acc: 48.00777453838678, st
+  Early stopping triggered, with best val acc: 50.242954324586975, st
+  Early stopping triggered, with best val acc: 52.445740200842245, st
+   Total best acc changed to 57.434402332361515,  
+                            at epoch 3/50 at the coin 12
+   Total best acc changed to 57.98509880142533,  
+                            at epoch 7/50 at the coin 12
+   Early stopping triggered, with best val acc: 57.98509880142533, nd
+  Early stopping triggered, with best val acc: 54.61613216715258, st
+  Early stopping triggered, with best val acc: 55.45837382572076, st
+  Early stopping triggered, with best val acc: 51.86264982183349, st
+  Early stopping triggered, with best val acc: 55.91188856494979, st
+  Early stopping triggered, with best val acc: 53.19080012957564, st
+  Early stopping triggered, with best val acc: 55.87949465500486, st
+  Early stopping triggered, with best val acc: 53.838678328474245, st
+  Early stopping triggered, with best val acc: 52.31616456106252, st
+  Early stopping triggered, with best val acc: 53.90346614836411, st
+  Early stopping triggered, with best val acc: 50.923226433430514, st
+  Early stopping triggered, with best val acc: 49.109167476514415, st
+   Total best acc changed to 46.128927761580826,  
+                            at epoch 0/50 at the coin 9
+   Total best acc changed to 48.461289277615805,  
+                            at epoch 3/50 at the coin 9
+   Total best acc changed to 49.076773566569486,  
+                            at epoch 4/50 at the coin 9
+   Total best acc changed to 50.79365079365079,  
+                            at epoch 5/50 at the coin 9
+   Total best acc changed to 51.21477162293489,  
+                            at epoch 9/50 at the coin 9
+  Early stopping triggered, with best val acc: 51.21477162293489, st
+  Early stopping triggered, with best val acc: 50.56689342403628, st
+  Early stopping triggered, with best val acc: 50.56689342403628, st
+  Early stopping triggered, with best val acc: 50.30774214447684, st
+  Early stopping triggered, with best val acc: 47.8134110787172, st
+   Total best acc changed to 52.21898283122773,  
+                            at epoch 1/50 at the coin 9
+   Total best acc changed to 54.3245869776482,  
+                            at epoch 2/50 at the coin 9
+   Total best acc changed to 54.38937479753806,  
+                            at epoch 19/50 at the coin 9
+   Total best acc changed to 56.65694849368319,  
+                            at epoch 31/50 at the coin 9
+  Early stopping triggered, with best val acc: 50.08098477486232, st
+  Early stopping triggered, with best val acc: 54.81049562682216, st
+  Early stopping triggered, with best val acc: 53.02883057985099, st
+  Early stopping triggered, with best val acc: 50.890832523485585, st
+  Early stopping triggered, with best val acc: 54.03304178814383, st
+  Early stopping triggered, with best val acc: 48.78522837706511, st
+  Early stopping triggered, with best val acc: 49.91901522513768, st
+  Early stopping triggered, with best val acc: 52.54292193067703, st
+  Early stopping triggered, with best val acc: 53.48234531908001, st
+  Early stopping triggered, with best val acc: 55.814706835115, st
+  Early stopping triggered, with best val acc: 49.789439585357954, st
+   Total best acc changed to 52.057013281503075,  
+                            at epoch 0/50 at the coin 1
+   Total best acc changed to 52.60770975056689,  
+                            at epoch 1/50 at the coin 1
+  Early stopping triggered, with best val acc: 52.60770975056689, st
+   Total best acc changed to 52.704891480401685,  
+                            at epoch 2/50 at the coin 1
+   Total best acc changed to 53.352769679300295,  
+                            at epoch 4/50 at the coin 1
+   Total best acc changed to 54.3245869776482,  
+                            at epoch 8/50 at the coin 1
+   Total best acc changed to 55.32879818594105,  
+                            at epoch 11/50 at the coin 1
+   Total best acc changed to 55.425979915775834,  
+                            at epoch 15/50 at the coin 1
+   Total best acc changed to 55.55555555555556,  
+                            at epoch 21/50 at the coin 1
+   Total best acc changed to 57.04567541302235,  
+                            at epoch 22/50 at the coin 1
+   Early stopping triggered, with best val acc: 57.04567541302235, nd
+  Early stopping triggered, with best val acc: 53.579527048914805, st
+  Early stopping triggered, with best val acc: 54.13022351797862, st
+  Early stopping triggered, with best val acc: 50.11337868480726, st
+  Early stopping triggered, with best val acc: 53.32037576935536, st
+  Early stopping triggered, with best val acc: 56.073858114674444, st
+  Early stopping triggered, with best val acc: 52.445740200842245, st
+  Early stopping triggered, with best val acc: 53.22319403952057, st
+   Total best acc changed to 57.79073534175575,  
+                            at epoch 16/50 at the coin 1
+   Early stopping triggered, with best val acc: 57.79073534175575, nd
+  Early stopping triggered, with best val acc: 55.361192095885976, st
+  Early stopping triggered, with best val acc: 56.04146420472951, st
+  Early stopping triggered, with best val acc: 47.975380628441854, st
+  Early stopping triggered, with best val acc: 50.59928733398121, st
+  Early stopping triggered, with best val acc: 53.838678328474245, st
+  Early stopping triggered, with best val acc: 51.31195335276968, st
+  Early stopping triggered, with best val acc: 52.99643666990606, st
+  Early stopping triggered, with best val acc: 49.36831875607386, st
+  Early stopping triggered, with best val acc: 52.41334629089731, st
+   Total best acc changed to 50.696469063816004,  
+                            at epoch 0/50 at the coin 20
+   Total best acc changed to 52.80207321023648,  
+                            at epoch 1/50 at the coin 20
+  Early stopping triggered, with best val acc: 52.80207321023648, st
+   Total best acc changed to 53.547133138969876,  
+                            at epoch 2/50 at the coin 20
+   Total best acc changed to 55.32879818594105,  
+                            at epoch 8/50 at the coin 20
+  Early stopping triggered, with best val acc: 55.32879818594105, st
+  Early stopping triggered, with best val acc: 52.1865889212828, st
+   Total best acc changed to 55.393586005830905,  
+                            at epoch 4/50 at the coin 20
+   Total best acc changed to 56.20343375445416,  
+                            at epoch 5/50 at the coin 20
+  Early stopping triggered, with best val acc: 56.20343375445416, st
+   Total best acc changed to 56.494978943958536,  
+                            at epoch 45/50 at the coin 20
+[I 2025-01-11 12:02:32,004] Trial 24 finished with value: 57.11046323291221 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.2939883197585027, 'batch_size': 64, 'l1_lambda': 0.0005292017059298068}. Best is trial 15 with value: 60.18788467768059.
+[I 2025-01-11 12:40:02,630] Trial 25 finished with value: 58.47100745059929 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.22709626655298082, 'batch_size': 64, 'l1_lambda': 5.487007354105111e-05}. Best is trial 15 with value: 60.18788467768059.
+[I 2025-01-11 13:10:27,119] Trial 26 finished with value: 59.863945578231295 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.27079221633740175, 'batch_size': 64, 'l1_lambda': 0.00019624416556455928}. Best is trial 15 with value: 60.18788467768059.
+   Total best acc changed to 57.11046323291221,  
+                            at epoch 0/50 at the coin 20
+   Early stopping triggered, with best val acc: 57.11046323291221, nd
+  Early stopping triggered, with best val acc: 50.242954324586975, st
+  Early stopping triggered, with best val acc: 50.27534823453191, st
+  Early stopping triggered, with best val acc: 52.672497570456756, st
+  Early stopping triggered, with best val acc: 54.19501133786848, st
+  Early stopping triggered, with best val acc: 54.454162617427926, st
+  Early stopping triggered, with best val acc: 52.445740200842245, st
+  Early stopping triggered, with best val acc: 55.94428247489472, st
+  Early stopping triggered, with best val acc: 49.27113702623907, st
+  Early stopping triggered, with best val acc: 51.92743764172336, st
+  Early stopping triggered, with best val acc: 52.024619371558146, st
+  Early stopping triggered, with best val acc: 53.90346614836411, st
+  Early stopping triggered, with best val acc: 53.90346614836411, st
+  Early stopping triggered, with best val acc: 51.830255911888564, st
+   Total best acc changed to 46.03174603174603,  
+                            at epoch 0/50 at the coin 7
+   Total best acc changed to 48.13735017816651,  
+                            at epoch 1/50 at the coin 7
+   Total best acc changed to 48.29931972789116,  
+                            at epoch 2/50 at the coin 7
+   Total best acc changed to 48.461289277615805,  
+                            at epoch 14/50 at the coin 7
+   Total best acc changed to 48.97959183673469,  
+                            at epoch 17/50 at the coin 7
+  Early stopping triggered, with best val acc: 48.97959183673469, st
+   Total best acc changed to 51.08519598315517,  
+                            at epoch 0/50 at the coin 7
+   Total best acc changed to 51.92743764172336,  
+                            at epoch 1/50 at the coin 7
+   Total best acc changed to 55.652737285390344,  
+                            at epoch 2/50 at the coin 7
+   Total best acc changed to 56.65694849368319,  
+                            at epoch 5/50 at the coin 7
+   Total best acc changed to 56.754130223517976,  
+                            at epoch 7/50 at the coin 7
+   Total best acc changed to 57.33722060252673,  
+                            at epoch 19/50 at the coin 7
+   Total best acc changed to 58.43861354065436,  
+                            at epoch 20/50 at the coin 7
+   Total best acc changed to 58.47100745059929,  
+                            at epoch 33/50 at the coin 7
+   Early stopping triggered, with best val acc: 58.47100745059929, nd
+  Early stopping triggered, with best val acc: 53.51473922902494, st
+  Early stopping triggered, with best val acc: 50.242954324586975, st
+  Early stopping triggered, with best val acc: 50.95562034337544, st
+   Early stopping triggered, with best val acc: 57.82312925170068, nd
+  Early stopping triggered, with best val acc: 49.72465176546809, st
+  Early stopping triggered, with best val acc: 51.66828636216391, st
+  Early stopping triggered, with best val acc: 54.42176870748299, st
+  Early stopping triggered, with best val acc: 53.158406219630706, st
+  Early stopping triggered, with best val acc: 47.8134110787172, st
+  Early stopping triggered, with best val acc: 56.300615484288954, st
+  Early stopping triggered, with best val acc: 55.00485908649174, st
+  Early stopping triggered, with best val acc: 52.964042759961124, st
+  Early stopping triggered, with best val acc: 54.940071266601876, st
+  Early stopping triggered, with best val acc: 48.26692581794622, st
+  Early stopping triggered, with best val acc: 55.0696469063816, st
+  Early stopping triggered, with best val acc: 53.547133138969876, st
+  Early stopping triggered, with best val acc: 48.10495626822158, st
+   Total best acc changed to 50.59928733398121,  
+                            at epoch 0/50 at the coin 15
+   Total best acc changed to 51.05280207321024,  
+                            at epoch 4/50 at the coin 15
+   Total best acc changed to 51.21477162293489,  
+                            at epoch 12/50 at the coin 15
+   Total best acc changed to 51.40913508260447,  
+                            at epoch 21/50 at the coin 15
+   Total best acc changed to 52.057013281503075,  
+                            at epoch 30/50 at the coin 15
+   Total best acc changed to 53.22319403952057,  
+                            at epoch 47/50 at the coin 15
+   Total best acc changed to 53.352769679300295,  
+                            at epoch 21/50 at the coin 15
+  Early stopping triggered, with best val acc: 53.352769679300295, st
+  Early stopping triggered, with best val acc: 51.117589893100096, st
+  Early stopping triggered, with best val acc: 51.99222546161322, st
+   Total best acc changed to 55.94428247489472,  
+                            at epoch 0/50 at the coin 15
+  Early stopping triggered, with best val acc: 55.94428247489472, st
+  Early stopping triggered, with best val acc: 53.77389050858439, st
+   Total best acc changed to 56.00907029478458,  
+                            at epoch 8/50 at the coin 15
+   Total best acc changed to 56.754130223517976,  
+                            at epoch 29/50 at the coin 15
+  Early stopping triggered, with best val acc: 52.12180110139294, st
+  Early stopping triggered, with best val acc: 53.385163589245224, st
+  Early stopping triggered, with best val acc: 53.48234531908001, st
+  Early stopping triggered, with best val acc: 49.56268221574344, st
+  Early stopping triggered, with best val acc: 48.428895367670876, st
+   Total best acc changed to 59.442824748947196,  
+                            at epoch 1/50 at the coin 15
+   Early stopping triggered, with best val acc: 59.442824748947196, nd
+  Early stopping triggered, with best val acc: 56.81891804340784, st
+  Early stopping triggered, with best val acc: 52.80207321023648, st
+  Early stopping triggered, with best val acc: 54.778101716877224, st
+   Total best acc changed to 59.863945578231295,  
+                            at epoch 0/50 at the coin 15
+   Early stopping triggered, with best val acc: 59.863945578231295, nd
+  Early stopping triggered, with best val acc: 56.754130223517976, st
+  Early stopping triggered, with best val acc: 50.63168124392614, st
+  Early stopping triggered, with best val acc: 48.10495626822158, st
+  Early stopping triggered, with best val acc: 54.454162617427926, st
+   Total best acc changed to 48.49368318756074,  
+                            at epoch 0/50 at the coin 6
+   Total best acc changed to 48.78522837706511,  
+                            at epoch 1/50 at the coin 6
+   Total best acc changed to 49.04437965662456,  
+                            at epoch 2/50 at the coin 6
+   Total best acc changed to 49.65986394557823,  
+                            at epoch 3/50 at the coin 6
+   Total best acc changed to 51.05280207321024,  
+                            at epoch 5/50 at the coin 6
+   Total best acc changed to 51.830255911888564,  
+                            at epoch 12/50 at the coin 6
+   Total best acc changed to 52.41334629089731,  
+                            at epoch 16/50 at the coin 6
+  Early stopping triggered, with best val acc: 52.41334629089731, st
+  Early stopping triggered, with best val acc: 52.38095238095238, st
+   Total best acc changed to 52.86686103012634,  
+                            at epoch 2/50 at the coin 6
+  Early stopping triggered, with best val acc: 52.86686103012634, st
+  Early stopping triggered, with best val acc: 45.96695821185617, st
+   Total best acc changed to 52.964042759961124,  
+                            at epoch 2/50 at the coin 6
+  Early stopping triggered, with best val acc: 52.964042759961124, st
+  Early stopping triggered, with best val acc: 51.47392290249433, st
+  Early stopping triggered, with best val acc: 50.3725299643667, st
+  Early stopping triggered, with best val acc: 52.737285390346614, st
+  Early stopping triggered, with best val acc: 50.63168124392614, st
+  Early stopping triggered, with best val acc: 50.048590864917394, st
+   Total best acc changed to 54.454162617427926,  
+                            at epoch 36/50 at the coin 6
+[I 2025-01-11 13:46:22,840] Trial 27 finished with value: 58.17946226109491 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.27049021966863596, 'batch_size': 64, 'l1_lambda': 0.0020038742488042954}. Best is trial 15 with value: 60.18788467768059.
+[I 2025-01-11 14:11:37,542] Trial 28 finished with value: 56.36540330417881 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.24963336349578746, 'batch_size': 128, 'l1_lambda': 0.0007985943642196976}. Best is trial 15 with value: 60.18788467768059.
+[I 2025-01-11 15:02:15,272] Trial 29 finished with value: 59.31324910916748 and parameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 4, 'drop_prob': 0.2043531592097369, 'batch_size': 64, 'l1_lambda': 0.008699844897928998}. Best is trial 15 with value: 60.18788467768059.
+  Early stopping triggered, with best val acc: 48.169744088111436, st
+   Total best acc changed to 55.97667638483965,  
+                            at epoch 2/50 at the coin 6
+   Total best acc changed to 56.10625202461937,  
+                            at epoch 3/50 at the coin 6
+   Total best acc changed to 56.559766763848394,  
+                            at epoch 4/50 at the coin 6
+   Total best acc changed to 56.8837058632977,  
+                            at epoch 6/50 at the coin 6
+   Total best acc changed to 57.175251052802075,  
+                            at epoch 7/50 at the coin 6
+   Total best acc changed to 58.17946226109491,  
+                            at epoch 10/50 at the coin 6
+   Early stopping triggered, with best val acc: 58.17946226109491, nd
+  Early stopping triggered, with best val acc: 49.789439585357954, st
+  Early stopping triggered, with best val acc: 55.0696469063816, st
+  Early stopping triggered, with best val acc: 54.940071266601876, st
+  Early stopping triggered, with best val acc: 55.23161645610625, st
+  Early stopping triggered, with best val acc: 53.41755749919015, st
+  Early stopping triggered, with best val acc: 52.478134110787174, st
+   Total best acc changed to 44.44444444444444,  
+                            at epoch 0/50 at the coin 9
+   Total best acc changed to 50.048590864917394,  
+                            at epoch 1/50 at the coin 9
+   Total best acc changed to 51.40913508260447,  
+                            at epoch 2/50 at the coin 9
+   Total best acc changed to 53.41755749919015,  
+                            at epoch 5/50 at the coin 9
+  Early stopping triggered, with best val acc: 53.41755749919015, st
+  Early stopping triggered, with best val acc: 51.34434726271461, st
+   Total best acc changed to 53.806284418529316,  
+                            at epoch 0/50 at the coin 9
+   Total best acc changed to 53.838678328474245,  
+                            at epoch 15/50 at the coin 9
+   Total best acc changed to 54.68091998704244,  
+                            at epoch 24/50 at the coin 9
+   Total best acc changed to 54.81049562682216,  
+                            at epoch 35/50 at the coin 9
+  Early stopping triggered, with best val acc: 54.22740524781341, st
+  Early stopping triggered, with best val acc: 50.17816650469712, st
+  Early stopping triggered, with best val acc: 53.96825396825397, st
+   Total best acc changed to 56.36540330417881,  
+                            at epoch 0/50 at the coin 9
+  Early stopping triggered, with best val acc: 56.36540330417881, st
+  Early stopping triggered, with best val acc: 53.871072238419174, st
+  Early stopping triggered, with best val acc: 51.571104632329124, st
+  Early stopping triggered, with best val acc: 52.54292193067703, st
+  Early stopping triggered, with best val acc: 52.76967930029154, st
+  Early stopping triggered, with best val acc: 54.55134434726271, st
+  Early stopping triggered, with best val acc: 50.63168124392614, st
+  Early stopping triggered, with best val acc: 52.34855847100745, st
+  Early stopping triggered, with best val acc: 49.65986394557823, st
+  Early stopping triggered, with best val acc: 50.664075153871075, st
+  Early stopping triggered, with best val acc: 56.073858114674444, st
+  Early stopping triggered, with best val acc: 53.838678328474245, st
+  Early stopping triggered, with best val acc: 52.737285390346614, st
+  Early stopping triggered, with best val acc: 51.571104632329124, st
+  Early stopping triggered, with best val acc: 50.98801425332037, st
+   Total best acc changed to 49.82183349530288,  
+                            at epoch 0/50 at the coin 13
+   Total best acc changed to 51.31195335276968,  
+                            at epoch 2/50 at the coin 13
+   Total best acc changed to 52.38095238095238,  
+                            at epoch 7/50 at the coin 13
+  Early stopping triggered, with best val acc: 52.38095238095238, st
+   Total best acc changed to 56.10625202461937,  
+                            at epoch 0/50 at the coin 13
+  Early stopping triggered, with best val acc: 56.10625202461937, st
+  Early stopping triggered, with best val acc: 54.0006478781989, st
+  Early stopping triggered, with best val acc: 49.53028830579851, st
+  Early stopping triggered, with best val acc: 50.95562034337544, st
+  Early stopping triggered, with best val acc: 55.19922254616132, st
+  Early stopping triggered, with best val acc: 52.54292193067703, st
+  Early stopping triggered, with best val acc: 54.09782960803369, st
+  Early stopping triggered, with best val acc: 53.158406219630706, st
+  Early stopping triggered, with best val acc: 51.70068027210884, st
+  Early stopping triggered, with best val acc: 55.361192095885976, st
+  Early stopping triggered, with best val acc: 51.95983155166829, st
+  Early stopping triggered, with best val acc: 51.92743764172336, st
+  Early stopping triggered, with best val acc: 51.95983155166829, st
+  Early stopping triggered, with best val acc: 54.09782960803369, st
+   Total best acc changed to 56.36540330417881,  
+                            at epoch 0/50 at the coin 13
+  Early stopping triggered, with best val acc: 56.36540330417881, st
+  Early stopping triggered, with best val acc: 54.259799157758344, st
+  Early stopping triggered, with best val acc: 52.251376741172656, st
+   Total best acc changed to 59.31324910916748,  
+                            at epoch 23/50 at the coin 13
+   Early stopping triggered, with best val acc: 59.31324910916748, nd
+Best hyperparameters: {'d_model': 64, 'n_head': 2, 'ffn_hidden': 80, 'n_layers': 2, 'drop_prob': 0.23853364371371044, 'batch_size': 64, 'l1_lambda': 0.0003209338473538532}
+
+Best validation accuracy: 60.18788467768059
+
+The input series was reduced to the 52 with the highest score of multual information with respect to the target binary variable
+

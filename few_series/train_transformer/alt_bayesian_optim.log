@@ -1,0 +1,8 @@
+ Best acc changed to 49.5578231292517, at epoch 0/150
+Epoch 1/150, 
+Train Loss: 0.0459, Train Acc: 49.91%, 
+Val Loss: 0.6824, Val Acc: 49.56% 
+ Best acc changed to 50.4421768707483, at epoch 2/150
+Epoch 11/150, 
+Train Loss: 0.0383, Train Acc: 50.23%, 
+Val Loss: 0.6824, Val Acc: 49.56% 

@@ -266,7 +266,7 @@ def prepare_data(data):
             (data_val_x, data_val_y),
             (data_tst_x, data_tst_y)) 
 
-data = np.load("train/np_series_concat2.npy")
+data = np.load("np_series_concat2.npy")
 coin_data = prepare_data(data)     
 
 study = optuna.create_study(direction="maximize")

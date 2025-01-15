@@ -167,12 +167,12 @@ def train_and_evaluate_model(hyperparams, data, file_path):
     
     return best_v_acc
 
-file_path = "few_series/alt_bayesian_optim.log"  
+file_path = "train/alt_bayesian_optim.log"  
 
 
 
 
-data = np.load("few_series/np_series_concat2.npy")
+data = np.load("train/np_series_concat2.npy")
 cols = [0, 1, 3, 5, 13, 15, 144, 16, 17, 19, 20, 21, 23, 24, 27, 28, 29, 30, 31, 34, 36, 38, 39,40, 41, 46, 48, 49, 52, 53, 54, 55, 56, 57, 59, 61, 62, 63, 64, 67, 68, 71, -1]
 data=data[:,:, cols]
 data_res = prepare_data_random(data) 

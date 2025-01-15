@@ -17,7 +17,7 @@ num_models = 2
 num_epochs = 2
 learning_rate = 0.01
 
-data = np.load("few_series/np_series_concat2.npy")
+data = np.load("train/np_series_concat2.npy")
 # cols = [0, 1, 3, 5, 13, 15, 144, 16, 17, 19, 20, 21, 23, 24, 27, 28, 29, 30, 31, 34, 36, 38, 39, 40, 41, 46, 48, 49, 52, 53, 54, 55, 56, 57, 59, 61, 62, 63, 64, 67, 68, 71, -1]
 # data = data[:,:, cols]
 prepared_data = prepare_data_random(data)

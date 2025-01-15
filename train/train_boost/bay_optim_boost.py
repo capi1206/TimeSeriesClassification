@@ -14,7 +14,7 @@ seq_length = 30
 test_perc = 0.05
 val_perc = 0.1
 
-BEST_MODEL_FILE = "few_series/train_boost/model_results/best_model_params.pth"
+BEST_MODEL_FILE = "train/train_boost/model_results/best_model_params.pth"
 best_val_acc_over_trials = 0
 
 def objective(trial, data):
@@ -108,7 +108,7 @@ def evaluate(model, data_loader, device):
 
     return correct / total
 
-data = np.load("few_series/np_series_concat2.npy")
+data = np.load("train/np_series_concat2.npy")
 
 prepared_data = prepare_data_random(data)
 data = (

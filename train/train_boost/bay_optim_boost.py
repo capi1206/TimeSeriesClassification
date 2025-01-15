@@ -7,8 +7,8 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
 import optuna
 
-from deep_learning.boost import BoostingRNN 
-from deep_learning.utils import prepare_data_random, shuffle_data
+from models.boost import BoostingRNN 
+from models.utils import prepare_data_random, shuffle_data
 
 seq_length = 30
 test_perc = 0.05

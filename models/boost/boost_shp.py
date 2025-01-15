@@ -2,8 +2,8 @@ import torch
 from torch.utils.data import DataLoader, TensorDataset
 import numpy as np
 
-from deep_learning.boost import BoostingRNN 
-from deep_learning.utils import prepare_data_random, shuffle_data
+from models.boost import BoostingRNN 
+from models.utils import prepare_data_random, shuffle_data
 
 torch.manual_seed(0)
 

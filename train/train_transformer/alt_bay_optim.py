@@ -9,8 +9,8 @@ from torch.utils.data import DataLoader, TensorDataset
 import optuna
 
 
-from deep_learning.transformer import Transformer
-from deep_learning.utils import prepare_data_random, shuffle_data
+from models.transformer import Transformer
+from models.utils import prepare_data_random, shuffle_data
 
 seq_length = 30
 test_perc = 0.05

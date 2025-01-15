@@ -11,8 +11,8 @@ import copy
 import optuna
 from functools import partial
 
-from deep_learning.transformer import Transformer
-from deep_learning.utils import norm_mts_with_window, create_seq_from_ts
+from models.transformer import Transformer
+from models.utils import norm_mts_with_window, create_seq_from_ts
 
 seq_length = 30
 test_perc = 0.05

@@ -18,6 +18,9 @@ seq_length = 30
 test_perc = 0.05
 val_perc = 0.1
 
+BEST_MODEL_FILE = "train_transformer/model_results/b_tr_sep_params.pth"
+best_val_acc_over_trials = 0
+
 def objective(trial, data, file_path=""):
     hyperparams = {
         "d_model": trial.suggest_categorical("d_model",[64]),# [64, 120, 256]),
@@ -40,6 +43,7 @@ def train_and_evaluate_model(hyperparams, coin_data, file_path=""):
     Returns:
         the objective for the bayesian search to optimize.    
     """
+    global best_val_acc_over_trials
     best_model_params = None
     coin_ids = list(coin_data.keys())  # List of coin IDs
     input_dim = coin_data[coin_ids[0]]['X_tr'].shape[-1]
@@ -109,6 +113,15 @@ def train_and_evaluate_model(hyperparams, coin_data, file_path=""):
 
             train_loss /= total
             train_accuracy =  100* correct / total
+            train_tp = ((predicted == 1) & (y_batch == 1)).sum().item()
+            train_fp = ((predicted == 1) & (y_batch == 0)).sum().item()
+            train_tn = ((predicted == 0) & (y_batch == 0)).sum().item()
+            train_fn = ((predicted == 0) & (y_batch == 1)).sum().item()
+
+            print(f"Epoch {e + 1}/{inner_epochs}:\n")
+            print(f"Train Loss: {train_loss:.4f}, Train Accuracy: {train_accuracy:.2f}%\n")
+            print(f"TP: {train_tp}, FP: {train_fp}, TN: {train_tn}, FN: {train_fn}\n")
+
 
             val_loss = 0.0
             correct = 0
@@ -137,6 +150,16 @@ def train_and_evaluate_model(hyperparams, coin_data, file_path=""):
 
             val_loss /= total
             val_accuracy = 100 * correct / total
+            
+            train_tp = ((predicted == 1) & (y_batch == 1)).sum().item()
+            train_fp = ((predicted == 1) & (y_batch == 0)).sum().item()
+            train_tn = ((predicted == 0) & (y_batch == 0)).sum().item()
+            train_fn = ((predicted == 0) & (y_batch == 1)).sum().item()
+
+
+            print(f"Validation Loss: {val_loss:.4f}, Validation Accuracy: {val_accuracy:.2f}%\n")
+            print(f"TP: {train_tp}, FP: {train_fp}, TN: {train_tn}, FN: {train_fn}\n")
+
 
         # Early stopping and saving the best model
             if val_accuracy > best_v_acc:
@@ -147,6 +170,11 @@ def train_and_evaluate_model(hyperparams, coin_data, file_path=""):
                     best_model_params = copy.deepcopy(model.state_dict())
                     print(f"""   Total best acc changed to {best_v_acc_total},  
                             at epoch {e}/{inner_epochs} at the coin {coin_id}""")
+                    if val_accuracy > best_val_acc_over_trials :
+                        best_val_acc_over_trials = val_accuracy
+                        best_model_params = copy.deepcopy(model.state_dict())
+                        torch.save(best_model_params, BEST_MODEL_FILE)
+                        print(f"Model saved to {BEST_MODEL_FILE}")
                 
             else:
                 n_noimprov += 1

@@ -12,7 +12,7 @@ import optuna
 from functools import partial
 
 from models.transformer import Transformer
-from models.utils import norm_mts_with_window, create_seq_from_ts
+from models.utils import norm_mts_with_window, create_seq_from_ts, print_progress
 
 seq_length = 30
 test_perc = 0.05
@@ -21,7 +21,7 @@ val_perc = 0.1
 BEST_MODEL_FILE = "train_transformer/model_results/b_tr_sep_params.pth"
 best_val_acc_over_trials = 0
 
-def objective(trial, data, file_path=""):
+def objective(trial, data):
     hyperparams = {
         "d_model": trial.suggest_categorical("d_model",[64]),# [64, 120, 256]),
         "n_head": trial.suggest_categorical("n_head", [2]), #, 4, 8]),
@@ -34,12 +34,11 @@ def objective(trial, data, file_path=""):
     val_accuracy = train_and_evaluate_model(hyperparams, data)
     return val_accuracy
 
-def train_and_evaluate_model(hyperparams, coin_data, file_path=""):
+def train_and_evaluate_model(hyperparams, coin_data):
     """Trains and evaluates the model, function used in the bayesian optimization
     Args:
         hyperparams the hyperparams to oerform the search on.
         coin_data dictionary containing the different coins to evaluate.
-        file_path "*.log" string where the log of the training will be saved.
     Returns:
         the objective for the bayesian search to optimize.    
     """
@@ -70,7 +69,6 @@ def train_and_evaluate_model(hyperparams, coin_data, file_path=""):
     correct = 0
     total = 0
 
-    #with open(file_path, "w") as f:
     for coin_id in coin_ids:
         best_v_acc = 0
         n_noimprov = 0
@@ -113,15 +111,6 @@ def train_and_evaluate_model(hyperparams, coin_data, file_path=""):
 
             train_loss /= total
             train_accuracy =  100* correct / total
-            train_tp = ((predicted == 1) & (y_batch == 1)).sum().item()
-            train_fp = ((predicted == 1) & (y_batch == 0)).sum().item()
-            train_tn = ((predicted == 0) & (y_batch == 0)).sum().item()
-            train_fn = ((predicted == 0) & (y_batch == 1)).sum().item()
-
-            print(f"Epoch {e + 1}/{inner_epochs}:\n")
-            print(f"Train Loss: {train_loss:.4f}, Train Accuracy: {train_accuracy:.2f}%\n")
-            print(f"TP: {train_tp}, FP: {train_fp}, TN: {train_tn}, FN: {train_fn}\n")
-
 
             val_loss = 0.0
             correct = 0
@@ -150,16 +139,10 @@ def train_and_evaluate_model(hyperparams, coin_data, file_path=""):
 
             val_loss /= total
             val_accuracy = 100 * correct / total
-            
-            train_tp = ((predicted == 1) & (y_batch == 1)).sum().item()
-            train_fp = ((predicted == 1) & (y_batch == 0)).sum().item()
-            train_tn = ((predicted == 0) & (y_batch == 0)).sum().item()
-            train_fn = ((predicted == 0) & (y_batch == 1)).sum().item()
 
 
-            print(f"Validation Loss: {val_loss:.4f}, Validation Accuracy: {val_accuracy:.2f}%\n")
-            print(f"TP: {train_tp}, FP: {train_fp}, TN: {train_tn}, FN: {train_fn}\n")
-
+            print_progress(e, inner_epochs, train_loss, train_accuracy,
+                           val_loss, val_accuracy)
 
         # Early stopping and saving the best model
             if val_accuracy > best_v_acc:
@@ -191,19 +174,12 @@ def train_and_evaluate_model(hyperparams, coin_data, file_path=""):
                 print(f"  Early stopping triggered, with best val acc: {best_v_acc}, st")
                 model.load_state_dict(best_model_params)
                 break
-                
-            #if e % 10 == 0:
-                # print(f"  Epoch {e + 1}/{inner_epochs}, \n"
-                #     f"  Train Loss: {train_loss:.4f}, Train Acc: {train_accuracy:.2f}%, \n"
-                #     f"  Val Loss: {val_loss:.4f}, Val Acc: {val_accuracy:.2f}% \n")
-                
+
             if e ==inner_epochs -1 and best_model_params:
                 model.load_state_dict(best_model_params)
     
-    
     return best_v_acc_total
-
-file_path = "model_results/bayesian_optim.log"        
+      
 def prepare_data(data):
     '''Puts the data into the dictionary format for the function train_and_evaluate_model to use 
     '''
@@ -212,9 +188,7 @@ def prepare_data(data):
         xdata = data[j, -1500:,:] #take only the last 1500 measurements
         data_2_norm = xdata[:, :-1]
 
-        # Check for NaNs
         if np.isnan(data_2_norm).any().any():
-            #print(f"Something wrong at {j}")
             continue
         
         data_2_norm = norm_mts_with_window(data_2_norm)
@@ -224,7 +198,6 @@ def prepare_data(data):
         if np.isnan(sequences).any().any():
             print(f"Something wrong at sequences in {j}")
             continue
-
         # Prepare targets
         y = xdata[seq_length - 1:, -1]
 
@@ -237,6 +210,7 @@ def prepare_data(data):
         y_tr = (y_tr + 1) / 2
         y_tst = (y_tst + 1) / 2  
         n_pos_tr = y_tr.sum()
+        #this is the positivi weight for the bcewithlogits loss function
         weight = (len(y_tr) -n_pos_tr)/n_pos_tr
         # Store data for this coin
         coin_data[j] = {
@@ -253,8 +227,7 @@ data = data[:,:, ind]
 coin_data = prepare_data(data)     
 
 study = optuna.create_study(direction="maximize")
-study.optimize(partial(objective, data=coin_data, file_path=file_path), n_trials=30)
+study.optimize(partial(objective, data=coin_data), n_trials=30)
 
-#with open(file_path, 'a') as f:
 print(f"Best hyperparameters: {study.best_params}\n")
 print(f"Best validation accuracy: {study.best_value}\n")

@@ -110,3 +110,12 @@ def shuffle_data(X_data, y_data):
     X_shuffled = X_data[indices]
     y_shuffled = y_data[indices]
     return X_shuffled, y_shuffled    
+
+def print_progress(e, epochs, 
+                   train_loss, train_accuracy,
+                   val_loss, val_accuracy):
+        print(f"\n Epoch {e + 1}/{epochs}:\n")
+        print(f"  Train Loss: {train_loss:.4f}, Train Accuracy: {train_accuracy:.2f}%")
+        print(f" Validation Loss: {val_loss:.4f}, Validation Accuracy: {val_accuracy:.2f}%")
+
+        

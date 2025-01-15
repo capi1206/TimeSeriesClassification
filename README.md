@@ -1,10 +1,10 @@
-## Binary Classification of Multivariate Time Series Using Transformers
+# Binary Classification of Multivariate Time Series Using Transformers
 
-# Project Description
+### Project Description
 
 This repository contains the code and resources used to evaluate the performance of a Transformer-based model for binary classification of multivariate time series, applied to cryptocurrency time series data. The motivation for this experiment was to explore the effectiveness of attention mechanisms, widely used in natural language processing (NLP), for analyzing sequential financial data.
 
-# Repository Structure
+## Repository Structure
 
 **train/** : Contains the model training scripts.
 
@@ -12,9 +12,11 @@ This repository contains the code and resources used to evaluate the performance
 
 **notebooks/** : Contains pca and mutual information for dimensionality reduction
 
-# Model Description and Methodology
+### Model Description and Methodology
 
 The model is based on attention mechanisms using a Transformer architecture adapted for binary time series classification.
+
+There is also a model using boosting RNN with a lstm as the base model.
 
 # Input Data
 
